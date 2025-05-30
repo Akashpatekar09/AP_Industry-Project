@@ -1,0 +1,226 @@
+/* General Reset and Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Blog Header Section */
+.blog-header {
+    position: relative;
+    height: 300px;
+    background: url('BlogPageIMG2.jpeg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Ensure proper spacing */
+}
+
+.blog-header h1 {
+    color: #000000;
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.blog-header h1:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin: 0 auto 10px;
+}
+
+.breadcrumb {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: red;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Container and Layout Adjustments */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.main-content {
+    flex: 1; /* Take available space */
+    min-width: 280px; /* Minimum width for smaller screens */
+    padding: 20px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+/* Sidebar Media Query Adjustments */
+@media (max-width: 1024px) {
+    .top-section {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+    .sidebar {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .main-content {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
+
+/* Responsive Image Adjustments */
+.main-content img, .blog-image img {
+    width: 100%;
+    /* border-radius: 10px; */
+    transition: transform 0.2s ease;
+}
+
+.main-content img:hover, .blog-image img:hover {
+    transform: scale(103%);
+    cursor: pointer;
+}
+
+/* Related Blog Adjustments */
+.related-blog {
+    margin-top: 40px;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center content for better alignment */
+}
+
+.blog-card {
+    background-color: white;
+    width: calc(75% - 10px); /* Two cards per row */
+    /* border-radius: 5px; */
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+/* .blog-card:hover {
+    transform: scale(105%);
+} */
+
+@media (max-width: 768px) {
+    .blog-card {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Sidebar Search and Recent News */
+.sidebar .search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sidebar .search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.sidebar .search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.recent-news {
+    margin-top: 20px;
+    height: auto; /* Remove fixed height for better responsiveness */
+    overflow-y: auto;
+    width: 100%;
+}
+
+.recent-news .news-item {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-news .news-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Typography */
+.blog-header h1 {
+    font-size: 36px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .blog-header h1 {
+        font-size: 28px;
+    }
+    .title, .blog-header h1 {
+        font-size: 16px;
+    }
+    .content-text {
+        font-size: 13px;
+    }
+}
+
+/* Blog Container Improvements */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}

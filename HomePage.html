@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+
+    <!-- Bootstrap CSS (sliders links)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       <!-- brand logos -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="HomePage.css">
+      <!-- footer Icon link -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+       
+</head>
+<body>
+     <div class="main">
+    
+     <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg">
+             <div class="container">
+                 <a class="navbar-brand" href="#">
+                     <img src="https://reliable95.com/wp-content/uploads/2024/01/1-removebg-preview-5.png" alt="Reliable Industries" class="logo">
+                 </a>
+             </div>
+
+             <!-- Icons Section -->
+             <div class="icons-section">
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-whatsapp"></i></a>
+                 <a href="#"><i class="fas fa-envelope"></i></a>
+             </div>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(150, 133, 133); color: black;">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- pages option -->
+             <div class="option">
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav ms-auto">
+                         <!-- Home -->
+                         <li class="nav-item">
+                             <a class="nav-link fs-6" href="#">Home</a>
+                         </li>
+                         <!-- About Us -->
+                         <li class="nav-item">
+                             <a class="nav-link fs-6" href="#">About</a>
+                         </li>
+                         <!-- Services Dropdown -->
+                         <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle fs-6" href="#" id="servicesDropdown" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">Services
+                             </a>
+                                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                     <li><a class="dropdown-item fs-6" href="#">shrink label packaging</a></li>
+                                     <li><a class="dropdown-item fs-6" href="#">design services</a></li>
+                                     <li><a class="dropdown-item fs-6" href="#">Product 3</a></li>
+                                     <li><a class="dropdown-item fs-6" href="#">Product 4</a></li>
+                                     <li><a class="dropdown-item fs-6" href="#">Product 5</a></li>
+                                     <li><a class="dropdown-item fs-6" href="#">Product 6</a></li>
+                                 </ul>
+                         </li>
+                         <!-- pouches Dropdown -->
+                         <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle fs-6" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                             <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                 <li class="dropdown-submenu">
+                                     <a class="dropdown-item dropdown-toggle fs-6" href="#">pouches</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item fs-6" href="#">Agarbatti Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Aluminium Foil Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Agarbatti Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Aluminium Foil Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Agarbatti Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Aluminium Foil Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Atta Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Flexible Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Food Packaging Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Kurkure Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Laminated Aluminium Foil Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Laminated Metalized Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Laminated Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Laminated Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Packaging Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Printed & Unprinted Laminated Packaging Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Stand Up Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Standup Pouches</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Tea Packaging Pouch</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Three Side Sealed Pouches</a></li>
+                                     </ul>
+                                 </li>
+                                 <!-- labels Dropdown -->
+                                 <li class="dropdown-submenu">
+                                     <a class="dropdown-item dropdown-toggle fs-6" href="#">Labels</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item fs-6" href="#">Packaging Labels</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Pvc Shrink Label</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Shrink Label</a></li>
+                                     </ul>
+                                 </li>
+                                  <!-- films Dropdown -->
+                                 <li class="dropdown-submenu">
+                                     <a class="dropdown-item dropdown-toggle fs-6" href="#">Films</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item fs-6" href="#">Bopp Films Raw Material</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Bopp Lamination Film</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">BOPP Packaging Products</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Film Roll</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">High Shrinkage Film</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">LDPE Shrink Film And Roll</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">LDPE Shrink Packaging Rolls</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Metallocene LDPE Film</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Packaging Films</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">Plastic Packaging Film</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">PVC Shrink Film</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><a class="dropdown-item fs-6" href="#">Tubes</a></li>
+                                 <li><a class="dropdown-item fs-6" href="#">Flaps</a></li>
+                                 <li class="dropdown-submenu">
+                                     <a class="dropdown-item dropdown-toggle fs-6" href="#">Sleeves</a>
+                                     <!-- sleeves Dropdown -->
+                                     <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item fs-6" href="#">Packaging Shrink Sleeve</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">PET Bottles Sleeve</a></li>
+                                         <li><a class="dropdown-item fs-6" href="#">PVC Cast Heat Shrink Sleeves</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link fs-6" href="#">Gallery</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link fs-6" href="BlogPage.html">Blog</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link fs-6" href="#">Contact</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
+
+       <!-- Hero Section -->
+<div class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-heading">Welcome to AP Printing</h1>
+        <p class="hero-description">Your one-stop solution for high-quality printing services</p>
+        <a href="#" class="btn hero-btn">Enquiry Now</a>
+    </div>
+</div>
+
+ <!-- Hero Section CSS -->
+<style>
+    .hero-section {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity level here */
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2; /* Ensure text stays above the overlay */
+        color: white;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark background for better text readability */
+        border-radius: 10px;
+    }
+
+    .hero-heading {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .hero-description {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        padding: 10px 20px;
+        background-color: #ff6f61;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .hero-btn:hover {
+        background-color: #e65a4f;
+    }
+</style>
+
+
+
+         
+         <!-- image bg sliders -->
+         <script>
+             <!-- Bootstrap JS with Popper.js -->
+             const images = [
+                 'standup.jpeg',
+                 'bg2.webp',
+                 'bg1.webp',
+                 'standup.jpeg',
+                 'bg3.webp',
+                 'bg2.jpeg'
+             ];
+
+             const texts = [
+                 {
+                      heading: "Welcome to Ultra-Tech Printing",
+                     description: "Your one-stop solution for high-quality printing services"
+                 },
+                 {
+                     heading: "We serve the best Packaging",
+                     description: "Experience vibrant colors and crisp details"
+                 },
+                 {
+                     heading: "Fast & Reliable Service",
+                     description: "Get your package on time, every time"
+                 },
+                 {
+                     heading: "We serve the best Packaging",
+                     description: "Personalized package solutions for all your needs"
+                 },
+                 {  
+                     heading: "Eco-Friendly Products",
+                     description: "Sustainability at the forefront of our process"
+                 },
+                 {
+                     heading: "Affordable Prices",
+                     description: "Packaging you can always count on"
+                 }
+             ];
+
+             let currentIndex = 0;
+             const heroSection = document.querySelector('.hero-section');
+             const heroHeading = document.querySelector('.hero-heading');
+             const heroDescription = document.querySelector('.hero-description');
+
+             function changeBackgroundAndText() {
+                 heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+                 heroHeading.textContent = texts[currentIndex].heading;
+                 heroDescription.textContent = texts[currentIndex].description;
+                 currentIndex = (currentIndex + 1) % images.length;
+             }
+
+             // Change image and text every 5 seconds
+             setInterval(changeBackgroundAndText, 5000);
+
+             // Set initial background and text
+              changeBackgroundAndText();
+
+        </script>
+    
+
+    
+         <!-- Category-Section -->
+         <div class="category-section">
+             <h2 class="category-title">Categories</h2>
+             <div class="adjustable-category-container">
+                 <!-- Category-Section-card -->
+                 <div class="adjustable-category-card">
+                     <img src="pack1.jpeg" alt="Shrink Labels" />
+                     <p>Shrink Labels</p>
+
+                     
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack2.jpeg" alt="Custom Packaging" />
+                     <p>Custom Packaging</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack3.jpeg" alt="Bottle Labels" />
+                     <p>Bottle Labels</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack4.jpeg" alt="Food Packaging" />
+                     <p>Food Packaging</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack5.jpeg" alt="Box Packaging" />
+                     <p>Box Packaging</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack6.jpeg" alt="Plastic Wraps" />
+                     <p>Plastic Wraps</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="pack2.jpeg" alt="Gift Packaging" />
+                     <p>Gift Packaging</p>
+                 </div>
+                 <div class="adjustable-category-card">
+                     <img src="bg.jpeg" alt="Pallet Wraps" />
+                     <p>Pallet Wraps</p>
+                 </div>
+             </div>
+         </div>
+        
+         <!-- NewProduction Launch Section -->
+         <div class="NewProduction"><h1>NewProduction Launch Section</h1></div>
+
+         <!-- Review Section -->
+         <section class="review-container">
+             <h2 class="mb-4">What Our Clients Say</h2>
+             <div class="swiper-container review-slider">
+                 <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <img src="logo6.png" alt="Company Logo" class="review-logo">
+                         <div class="review-content">
+                             <p>"Ultra-Tech Printing has transformed our business! The quality is top-notch."</p>
+                             <div class="rating">★★★★★</div>
+                             <span class="customer-name">-Team PG</span>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="logo.png" alt="Company Logo" class="review-logo">
+                         <div class="review-content">
+                             <p>"Excellent service and speedy delivery. Highly recommend!"</p>
+                             <div class="rating">★★★★☆</div>
+                             <span class="customer-name">- Team JT</span>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="logo10.png" alt="Company Logo" class="review-logo">
+                         <div class="review-content">
+                             <p>"The packaging design exceeded our expectations. Will definitely order again!"</p>
+                             <div class="rating">★★★★★</div>
+                             <span class="customer-name">- Team AK</span>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="logo11.png" alt="Company Logo" class="review-logo">
+                         <div class="review-content">
+                             <p>"Fast response and great support. A pleasure to work with!"</p>
+                             <div class="rating">★★★★☆</div>
+                             <span class="customer-name">-  Team SP</span>
+                         </div>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="logo.png" alt="Company Logo" class="review-logo">
+                         <div class="review-content">
+                             <p>"Best printing service I've ever used. Highly satisfied!"</p>
+                             <div class="rating">★★★★★</div>
+                             <span class="customer-name">- IG</span>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- Simple Navigation buttons -->
+                 <button class="navigation-button prev">&lt;</button>
+                 <button class="navigation-button next">&gt;</button>
+             </div>
+         </section>
+
+         <!-- reviews sliders script -->
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+         <script>
+             const swiper = new Swiper('.review-slider', {
+                 loop: true,
+                 autoplay: {
+                         delay: 2500,
+                         disableOnInteraction: false,
+                         },
+                     slidesPerView: 3, // Show three reviews at a time
+                     spaceBetween: 30,
+                     navigation: {
+                         nextEl: '.navigation-button.next',
+                         prevEl: '.navigation-button.prev',
+                         },
+                         on: {
+                             init: function () {
+                            // Initialize the first three slides as visible
+                             for (let i = 0; i < 3; i++) {
+                                 this.slides[i].style.opacity = '1';
+                                 }
+                             },
+                            slideChangeTransitionStart: function () {
+                            // Hide all slides and show only the three currently active slides
+                                  this.slides.forEach(slide => {
+                                  slide.style.opacity = '0';
+                                 });
+                                 for (let i = 0; i < 3; i++) {
+                                     this.slides[(this.activeIndex + i) % this.slides.length].style.opacity = '1';
+                                     }
+                                 },
+                             }
+                         });
+         </script>
+     
+    
+     <!--  Video Section -->
+      <div class="video-section">
+        <video class="background-video" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-text">
+            <h1>Your Text Here</h1>
+            <a href="#" class="video-btn">Know More</a>
+        </div>
+    </div>
+    
+
+
+
+
+
+         <!--  Customer Product Showcase Section -->
+         <div class="Showcase"><h1>  Customer Product Showcase Section</h1></div>
+
+
+
+
+
+
+
+    <!--  Dropdown link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+      <!-- <section class="contact-us"> -->
+        <div class="contact-us">
+            <div class="cont">
+                <div class="left-section">
+                    <h2>Contact Us</h2>
+                    <p>AP Industries
+                       hadapsar
+                        Dist. Pune – 401-208</p>
+                    <p>Call-Us: +91- 1234567890
+
+                        E-mail:apindustry@gmail.com</p>
+                </div>
+                <div class="right-section">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <small id="emailError" class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        <!-- </section> -->
+    </div>
+
+
+     <!-- Footer Start -->
+      <div class="footer">
+     <footer class="bg-dark text-white py-4 ">
+        <div class="container contact">
+            <div class="row">
+                <!-- About Colorflex Section -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>About AP</h4>
+                    <p>AP is a leading manufacturer and exporter of flexible packaging materials, offering a wide range of laminated rolls and pouches with center seal, side seal, and standup options.</p>
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="d-flex justify-content-center mt-2  mr-5">
+                                <a href="#" class="social-icon me-3 m-2"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon me-3 m-2"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-icon me-3 m-2"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-icon me-3 m-2"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li ><a href="index.html" class="">Home</a></li>
+                            <li><a href="#" class="">Products</a></li>
+                            <li><a href="about.html" class="">About Us</a></li>
+                            <li><a href="contact.html" class="">Contact</a></li>
+                            <li><a href="#" class="">Enquiry</a></li>
+                        </ul>
+                    </div>
+                    <!---some links section-->
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <h4>Some Links</h4>
+                        <ul class="list-unstyled" class="list_tag">
+                            <li><a href="#" class="">FAQs</a></li>
+                            <li><a href="#" class="">Terms of Services</a></li>
+                            <li><a href="#" class="">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                
+
+                <!-- Contact Info Section -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Our Newsletter</h4>
+                    <div class="mt-4 text-center">
+                        <b >Join our newsletter for the latest updates</b>
+                        <div class="input-group mt-3">
+                            <input type="email" id="message-input" placeholder="Enter your email" class="form-control" aria-label="Email" />
+                            <button id="sub-button" class="btn bg-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+
+            <hr class="my-4 border-white" style="border-top: 2px solid white;">
+
+            <!-- <h5 class="mt-3 text-center">Reliable Industries</h5> -->
+
+            <div class="text-center mt-4">
+                <small>&copy; 2021 AP Industries. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Footer End -->
+     
+        <!-- <script src="script.js"></script> -->
+</div>
+</body>
+
+</html>
